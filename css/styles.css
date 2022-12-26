@@ -26,7 +26,7 @@
 .logo-style-text {
   font-family: "Raleway" sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: calc(24 / 18);
   display: flex;
@@ -82,7 +82,6 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: none;
   margin: 0 auto;
 }
 
@@ -92,12 +91,16 @@ img {
 /*------HEADER-------*/
 .header {
   background-color: var(--background-heder);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  padding-right: 156px;
+  padding-left: 156px;
 }
 .header-container {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 .header-navigation {
   display: flex;
@@ -112,8 +115,17 @@ img {
 .logo {
   color: #2e2f42;
 }
-
+.header-navigation .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-list {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -154,10 +166,8 @@ a.selected {
 .hero {
   background-color: #2e2f42;
   flex-grow: 1;
-  padding-top: 192px;
-  padding-left: 474px;
-  padding-right: 474px;
-  padding-bottom: 192px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-text {
   display: flex;
@@ -167,9 +177,9 @@ a.selected {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin: auto;
   margin-bottom: 48px;
   max-width: 492px;
-  max-height: 120px;
 }
 
 .hero-btn {
@@ -185,13 +195,12 @@ a.selected {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 170px;
-  height: 51px;
-  left: 635px;
-  top: 432px;
-  position: absolute;
   flex-direction: row;
   align-items: flex-start;
   border: none;
+  padding: 16px 32px;
+  display: flex;
+  margin: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -267,6 +276,7 @@ a.selected {
 }
 .team-text {
   text-align: center;
+  margin-bottom: 32px;
 }
 
 /*------MENU-------*/
@@ -279,16 +289,9 @@ a.selected {
 
 .menu-list {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 24px;
-
-  position: absolute;
-  width: 586px;
-  height: 48px;
-  left: 427px;
-  top: 168px;
+  justify-content: center;
+  margin-top: 99px;
 }
 .menu-item {
 }
@@ -311,11 +314,16 @@ a.selected {
   flex: none;
   order: 1;
   flex-grow: 0;
+  padding: 12px 24px;
 }
 .menu-btn:hover,
 .menu-btn:focus {
   color: #ffffff;
   background-color: #4d5ae5;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
 }
 
 .menu-portfolio {
