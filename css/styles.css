@@ -1,4 +1,5 @@
 :root {
+  --accent-color: #e7e9fc;
   --color-navigation: #4d5ae5;
   --first-title-color: #2e2f42;
   --background-color: #ffffff;
@@ -24,8 +25,7 @@
   color: var(--first-title-color);
 }
 .logo-style-text {
-  font-family: "Raleway" sans-serif;
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: calc(24 / 18);
@@ -91,7 +91,7 @@ img {
 /*------HEADER-------*/
 .header {
   background-color: var(--background-heder);
-  position: absolute;
+
   background: #ffffff;
   border: 1px solid #e7e9fc;
   padding-right: 156px;
@@ -106,6 +106,7 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .header-logo {
@@ -360,6 +361,11 @@ a.selected {
 .menu-after-title {
   padding-left: 16px;
   margin-bottom: 32px;
+}
+.portfolio-card {
+  border-left: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 /*------FOOTER-------*/
