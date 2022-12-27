@@ -10,7 +10,7 @@
   --color-text: #434455;
 }
 .head-title-second {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -83,6 +83,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /*.site-body {
@@ -292,7 +296,7 @@ a.selected {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 99px;
+  /*  margin-top: 99px;*/
 }
 .menu-item {
 }
@@ -328,7 +332,9 @@ a.selected {
 }
 
 .menu-portfolio {
-  padding-top: 72px;
+  /*
+  padding-top: 72px;*/
+  margin-top: 72px;
   width: calc((100-48px) / 3);
   display: flex;
   flex-wrap: wrap;
