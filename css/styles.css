@@ -266,9 +266,8 @@ a.selected {
   display: flex;
   gap: 24px;
 }
-.team-img {
-  margin-bottom: 32px;
-}
+/*.team-img {
+}*/
 .team-item {
   width: calc((100-72px) / 4);
   background-color: #ffffff;
@@ -282,7 +281,10 @@ a.selected {
 }
 .team-text {
   text-align: center;
-  margin-bottom: 32px;
+}
+.team-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*------MENU-------*/
@@ -360,18 +362,16 @@ a.selected {
   background: #ffffff;
 }
 .menu-title {
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 .menu-after-title {
-  padding-left: 16px;
-  margin-bottom: 32px;
 }
 .portfolio-card {
   padding-top: 32px;
-  border-left: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 /*------FOOTER-------*/
